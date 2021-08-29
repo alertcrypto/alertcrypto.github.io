@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: montserrat, sans-serif;
+    font-family: "Cloister Black"
   }
   
   header {
@@ -39,7 +39,6 @@
     color: rgb(199, 193, 190);
     font-size: 28px;
     font-weight: 900;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   header .content h1 span {
     font-weight: 400;
