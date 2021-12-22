@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>Alerts | CryptoAlert</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link rel="stylesheet" href="css/style.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <a href="index.html" class="navbar-brand">Crypto<span color="#ce3232">Alert</span></a>
+               </div>
+
+               
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="index.html" class="smoothScroll">Home</a></li>
+                         <li><a href="alerts.html" class="smoothScroll">Alerts</a></li>
+                         <li><a href="market.html" class="smoothScroll">Market</a></li>
+                         <li><a href="discussion.html" class="smoothScroll">Discussion</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li>
+                         <a href="login.html" id="userlogin" value="userlogin" >LOGIN</a></li>
+                         <a href="getstarted.html" id="usergetstarted" class="section-btn">Get Started</a>
+                         <a href="#" id="user" class="message"> Hello, <Email-id></Email-id></a>
+                         <button id="userlogout" class="btn btn-danger" onclick="logout()">Logout</button>
+                    </ul>
+              </div>
+          </div>
+     </section> 
+
+
+     <!-- HOME -->
+
+     <div id="Text">
+          <b>Create an <b style="color:#ce3232">Alert!</p></b>
+               <br>
+               <b style="font-size: medium">Get notified when a coin price goes above or below your price target.</b>
+     </div>
+
+
+     <!-- <center><div style="margin:100px">
+          <span id="user" class="message">Hello, < email-id ></Email-id></span>
+          <div class="success"><span>Welcome to auth starter, You are successfully loged in!!!</span></div><br/>
+          <button class="btn btn-danger" onclick="logout()">Logout</button>
+      </div></center> -->
+
+
+
+     <div class="current-view" id="email">
+          <div class="newcontainer">
+
+               <form method="post" id="form_new_alert">
+                    <div class="text-label">Select Coin</div>
+                    <div class="grid-select2">
+                         <div>
+                              <select class="selectcoin" name="id" id="id"></select>
+                         </div>
+                         <div></div>
+                         <div style="font-size:10px;" id="pricediv"><a target="_blank" class="portfoliocoin"
+                                   href="https://coinmarketcap.com/currencies/bitcoin/"><img
+                                        style="vertical-align:middle;" width="12"
+                                        src="https://coinwink.com/img/coins/16x16/1.png"></a><span
+                                   style="position:relative;top:1.5px;"> = 1 BTC | 13.76344015 ETH | <span
+                                        onclick="changeCur(this)" id="cur-span" class="cur-span noselect">57038.60
+                                        USD</span></span></div>
+                    </div>
+                    <input name="coin" id="coin" type="hidden" value="Bitcoin" />
+                    <input name="symbol" id="symbol" type="hidden" value="BTC" />
+                    <div class="block-alert">
+                         <div class="text-label">Email</div>
+                         <input value="" maxlength="99" class="input-general" autocapitalize="off" id="email_out"
+                              name="email" type="text" required />
+                    </div>
+                    <div class="block-alert">
+                         <div class="text-label">Alert when price is above</div>
+                         <div class="grid-new-alert-conditions">
+                              <div>
+                                   <input value="" id="above" name="above" maxlength="32" type="text" step="any"
+                                        autocomplete="off" class="input-general-fluid">
+                              </div>
+                              <div></div>
+                              <div>
+                                   <select name="above_currency" id="above_currency" class="select-css-currency">
+                                        <option value="USD">USD</option>
+                                        <option value="BTC">INR</option>
+                                   </select>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="block-alert">
+                         <div class="text-label">Alert when price is below</div>
+                         <div class="grid-new-alert-conditions">
+                              <div>
+                                   <input value="" id="below" name="below" maxlength="32" type="text" step="any"
+                                        autocomplete="off" class="input-general-fluid">
+                              </div>
+                              <div></div>
+                              <div>
+                                   <select name="below_currency" id="below_currency" class="select-css-currency">
+                                        <option value="USD">USD</option>
+                                        <option value="BTC">INR</option>
+                                   </select>
+                              </div>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="text-label" style="margin-top:20px;margin-bottom:-8px;">I am not a robot:</div>
+                         <div style="margin:0 auto;display:table;margin-bottom:-22px;">
+                              <p class="cptch_block"><span class="cptch_wrap cptch_math_actions">
+                                        <label class="cptch_label" for="cptch_input_100"><span
+                                                  class="cptch_span">6</span>
+                                             <span class="cptch_span">&nbsp;&times;&nbsp;</span>
+                                             <span class="cptch_span"><input id="cptch_input_100"
+                                                       class="cptch_input cptch_shortcode" type="text"
+                                                       autocomplete="off" name="cptch_number" value="" maxlength="2"
+                                                       size="2" aria-required="true" required="required"
+                                                       style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" /></span>
+                                             <span class="cptch_span">&nbsp;=&nbsp;</span>
+                                             <span class="cptch_span">&#116;we&#110;ty &#102;our</span>
+                                             <input type="hidden" name="cptch_result" value="wM0=" /><input
+                                                  type="hidden" name="cptch_time" value="1637178393" />
+                                             <input type="hidden" name="cptch_form" value="general" />
+                                        </label></span></p>
+                         </div>
+                    </div>
+                    <div style="height:15px;"></div>
+                    <input name="action" type="hidden" value="create_alert" />
+                    <div class="block-submit">
+                         <input type="submit" id="create_alert_button" class="button-main" value="Create alert" />
+                         <div id="ajax_loader" class="create-alert-spinner">
+                              <div class="appify-spinner-div"></div>
+                         </div>
+                    </div>
+               </form>
+          </div>
+     </div>
+
+
+
+     <!--Firebase Script-->
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+     <script src="js/firebase.js"></script>
+     <script src="js/alerts.js"></script>
+
+     <!-- SCRIPTS -->
+     <script src="js/login.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/modal.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+
+</html>

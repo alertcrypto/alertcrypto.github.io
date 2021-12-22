@@ -1,0 +1,168 @@
+.add-alert {
+    background-color: #e4e4e4;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.alert-form {
+    padding: 66px;
+}
+
+.set-alert-modal {
+    padding-top: 150px;
+    max-width: 292px;
+    margin: auto;
+}
+
+.no-border {
+    border: none;
+}
+
+.set-alert-body {
+    background-color: #f2f2f2;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 5px;
+    size: 8px;
+    font-weight: 900;
+}
+
+.floating-tooltip-2 {
+    /*width: 96px;
+    height: 80px;*/
+    position: absolute;
+    display: none;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #131722;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: left;
+    z-index: 1000;
+    top: 12px;
+    left: 12px;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
+.switcher {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	margin-top: 8px;
+	color: #2196F3;
+}
+
+.switcher-item {
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 8px;
+	font-size: 14px;
+	color: #262b3e;
+	background-color: transparent;
+	margin-right: 8px;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+}
+
+.switcher-item:hover {
+	background-color: #f2f3f5;
+}
+
+.switcher-active-item {
+	text-decoration: none;
+	cursor: default;
+	color: #262b3e;
+}
+
+.switcher-active-item,
+.switcher-active-item:hover {
+	background-color: #e1eff9;
+}
+
+@media screen and (min-width: 600px) {
+    .add-alert .content {
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+
+    .select2-container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .select2-container .select2-selection--single .select2-selection__rendered {
+        padding-right: 50px;
+    }
+}
+
+.select2-container {
+    width: auto !important;
+}
+
+.add-alert label {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+p.control-label {
+    font-size: 18px;
+    margin: 0;
+}
+
+.tv-lightweight-charts {
+    border-radius: 5px;
+}
+
+#chart-container {
+    height: 100%;
+    position: relative;
+}
+
+#chart {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+
+.box .currencies {
+    flex: 0 1 auto;
+}
+
+.box .original-height {
+    flex: 0 1 auto;
+}
+
+.box .remaining-height {
+    flex: 1 1 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .add-alert .content {
+        padding: 10px;
+    }
+
+    .select2-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .add-alert p.control-label {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    #chart-container {
+        padding-bottom: 15px;
+    }
+}

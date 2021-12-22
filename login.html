@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Login | CryptoAlert</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+     
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+          <div onclick="application.goToTargetView(event)" id="back_bp">
+               <svg class="ios-arrow-back_bq" viewBox="160.008 88.087 7.308 12.784">
+                    <path id="ios-arrow-back_bq" d="M 162.2113647460938 94.4775390625 L 167.0482940673828 89.6444091796875 C 167.4060211181641 89.28668212890625 167.4060211181641 88.70823669433594 167.0482940673828 88.35430908203125 C 166.6905670166016 87.99658203125 166.1120910644531 88.00038146972656 165.75439453125 88.35430908203125 L 160.2743072509766 93.83058929443359 C 159.9280090332031 94.17689514160156 159.9203643798828 94.73251342773438 160.2476654052734 95.09024047851562 L 165.7505798339844 100.6045837402344 C 165.9294281005859 100.783447265625 166.1653747558594 100.870979309082 166.3975372314453 100.870979309082 C 166.6296691894531 100.870979309082 166.8656158447266 100.783447265625 167.0444793701172 100.6045837402344 C 167.4022216796875 100.2468490600586 167.4022216796875 99.66840362548828 167.0444793701172 99.31447601318359 L 162.2113647460938 94.4775390625 Z">
+                    </path>
+               </svg>
+               <div id="back_to_home_br">
+                    <span><a href="index.html"> home </a></span>
+               </div>
+          </div>
+          <div class="limiter">
+               <div class="container-login100">
+                    <div class="wrap-login100">
+                         <div class="login100-pic js-tilt" data-tilt>
+                              <img src="img/Logo.png" alt="IMG">
+                         </div>
+     
+                         <form onsubmmit="login()" id="loginForm" class="login100-form validate-form">
+                              <span class="login100-form-title">
+                                   Login
+                              </span>
+
+                              <small><span id="error" style="color: red"></span></small>
+
+                              <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                   <input id="email" class="input100" type="text" name="email" placeholder="Email">
+                                   <span class="symbol-input100">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                   </span>
+                              </div>
+     
+                              <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                                   <input id="password" class="input100" type="password" name="pass" placeholder="Password">
+                                   <span class="symbol-input100">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                   </span>
+                              </div>
+                              
+                              <div class="container-login100-form-btn">
+                                   <button onclick="login()" type = "submit" class="login100-form-btn">
+                                        Login
+                                   </button>
+                              </div>
+     
+                              <div class="text-center p-t-12">
+                                   <span class="txt1">
+                                        Forgot
+                                   </span>
+                                   <a class="txt2" href="#" onclick = "forgotPass()">
+                                        Username / Password?
+                                   </a>
+                              </div>
+     
+                              <div class="text-center p-t-136">
+                                   <a class="txt2" href="getstarted.html">
+                                        Create your Account
+                                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                                   </a>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </div>
+
+
+
+      <!--Firebase Script-->
+      <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+     <script src="js/firebase.js"></script>
+     <script src="js/login.js"></script>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>

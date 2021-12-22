@@ -1,35 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <title>CrptoAlert | Coming Soon</title>
-        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-        <script>
-          window.OneSignal = window.OneSignal || [];
-          OneSignal.push(function() {
-            OneSignal.init({
-              appId: "581e46dd-283b-4833-9ba6-7c6fae29906d",
-              safari_web_id: "web.onesignal.auto.3fd215f3-eebf-45ec-a840-b342bc8d8df9",
-              notifyButton: {
-                enable: true,
-              },
-            });
-          });
-        </script>
-        <link rel="apple-touch-icon" sizes="180x180" href="/CryptoAlertLogo/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/CryptoAlertLogo/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/CryptoAlertLogo/favicon-16x16.png">
-        <link rel="manifest" href="/CryptoAlertLogo/site.webmanifest">
-        <link rel="stylesheet" href="main.css" />
+<head>
+     <title>CryptoAlert</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
-    <header>
-        <div class="content">
-          <h1>CryptoAlert</h1>
-          <h2>COMING SOON</h2>
-          <div class="countdown">00 : 00 : 00 : 00</div>
-        </div>
-      </header>
-      <script src="main.js"></script>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">Crypto<span color = "#ce3232" >Alert</span></a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="index.html" class="smoothScroll">Home</a></li>
+                         <li><a href="alerts.html" class="smoothScroll">Alerts</a></li>
+                         <li><a href="market.html" class="smoothScroll">Market</a></li>
+                         <li><a href="discussion.html" class="smoothScroll">Discussion</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li>
+                         <a href="login.html" id="userlogin" value="userlogin" >LOGIN</a></li>
+                         <a href="getstarted.html" id="usergetstarted" class="section-btn">Get Started</a>
+                         <a href="#" id="user" class="message"> Hello, <Email-id></Email-id></a>
+                         <button id="userlogout" class="btn btn-danger" onclick="logout()">Logout</button>
+                    </ul>
+              </div>
+          </div>
+     </section>
+
+     <!-- HOME -->
+
+     <div id = "HomeText">
+         <b> Create <br> Schedule <br> Get </b>
+         <b><span style="color:#ce3232">Notified!</span></b>
+     </div>
+
+     <img id="bell-512" src="img/Bell.png" srcset="img/Bell.png 1x, img/Bell@2x.png 2x">
+     <img id="CryptoAlertHomeVector" src="img/CryptoAlertHomeVector.png" srcset="img/CryptoAlertHomeVector.png 1x, img/CryptoAlertHomeVector@2x.png 2x">
+
+     <div id="Component_3__2" class="Component_3___2">
+          <div id="Group_43">
+               <div id="Bitcoin">
+                    <span>Bitcoin</span>
+               </div>
+               <svg class="Icon_awesome-bitcoin" viewBox="0.562 0.563 34.188 33.138">
+                    <path id="Icon_awesome-bitcoin" d="M 34.7509765625 17.13125991821289 C 34.7509765625 26.28195381164551 27.09765243530273 33.70001220703125 17.65673637390137 33.70001220703125 C 8.215824127197266 33.70001220703125 0.5624999403953552 26.28195381164551 0.5624999403953552 17.13125991821289 C 0.5624999403953552 7.980559349060059 8.215825080871582 0.5625001192092896 17.65673637390137 0.5625001192092896 C 27.09765243530273 0.5625001192092896 34.7509765625 7.980559349060059 34.7509765625 17.13125991821289 Z M 24.98720169067383 14.77087593078613 C 25.3275032043457 12.56622886657715 23.5954704284668 11.38102912902832 21.22715950012207 10.59040546417236 L 21.99543571472168 7.60388708114624 L 20.11968803405762 7.150853157043457 L 19.37174606323242 10.05866813659668 C 18.87863159179688 9.939546585083008 18.37214660644531 9.827240943908691 17.86890029907227 9.715935707092285 L 18.62221908569336 6.789012908935547 L 16.74750518798828 6.335977554321289 L 15.9787483215332 9.321425437927246 C 15.57055473327637 9.231300354003906 15.16987323760986 9.142244338989258 14.78097915649414 9.048576354980469 L 14.78311634063721 9.03922176361084 L 12.19623374938965 8.413217544555664 L 11.69726181030273 10.35483455657959 C 11.69726181030273 10.35483455657959 13.08899402618408 10.66396236419678 13.05963134765625 10.68307018280029 C 13.81935977935791 10.86686325073242 13.9566650390625 11.35410499572754 13.93364238739014 11.74033164978027 L 13.05852794647217 15.14260768890381 C 13.11091327667236 15.15556716918945 13.17873954772949 15.1742057800293 13.25352668762207 15.20320224761963 C 13.19100856781006 15.18816947937012 13.12421703338623 15.17160034179688 13.05528831481934 15.15556716918945 L 11.82863807678223 19.92162704467773 C 11.7356538772583 20.14530372619629 11.50005722045898 20.48081970214844 10.96903228759766 20.35348129272461 C 10.98771190643311 20.37986946105957 9.605628967285156 20.02364349365234 9.605628967285156 20.02364349365234 L 8.674407005310059 22.10455894470215 L 11.11543655395508 22.69428634643555 C 11.56953620910645 22.80459022521973 12.01460742950439 22.9200325012207 12.45264625549316 23.02873229980469 L 11.6763744354248 26.04939270019531 L 13.54998588562012 26.50242805480957 L 14.31874370574951 23.51383590698242 C 14.81562995910645 23.64436149597168 15.31394195556641 23.76967811584473 15.81360340118408 23.88978004455566 L 15.04745483398438 26.86433792114258 L 16.92320251464844 27.31737327575684 L 17.6994743347168 24.30239105224609 C 20.89802551269531 24.8890495300293 23.30328178405762 24.65240669250488 24.31563377380371 21.84868240356445 C 25.1314697265625 19.5911865234375 24.27503395080566 18.28899955749512 22.59214973449707 17.43985557556152 C 23.81769561767578 17.16606903076172 24.74092102050781 16.38479995727539 24.98720169067383 14.77087783813477 Z M 20.70144271850586 20.59526634216309 C 20.12175559997559 22.85275650024414 16.19986724853516 21.63234710693359 14.92834758758545 21.32636070251465 L 15.95841407775879 17.32454109191895 C 17.22986602783203 17.63206481933594 21.3072566986084 18.24096298217773 20.70144462585449 20.59526634216309 Z M 21.28161239624023 14.73827457427979 C 20.75272560119629 16.79173278808594 17.4884147644043 15.74843597412109 16.42953681945801 15.4926872253418 L 17.36337852478027 11.86312675476074 C 18.42232513427734 12.11887454986572 21.83241844177246 12.59622859954834 21.28161239624023 14.73827457427979 Z">
+                    </path>
+               </svg>
+          </div>
+          <div id="Group_44">
+               <div id="Ethereum">
+                    <span>Ethereum</span>
+               </div>
+               <svg class="Icon_awesome-ethereum" viewBox="0.563 0 21.375 31">
+                    <path id="Icon_awesome-ethereum" d="M 21.93046951293945 15.79062366485596 L 11.25 21.40937232971191 L 0.5625 15.79062366485596 L 11.25 0 L 21.93046951293945 15.79062366485596 Z M 11.25 23.21367073059082 L 0.5625 17.59491920471191 L 11.25 31.00000190734863 L 21.9375 17.59491920471191 L 11.25 23.21366691589355 Z">
+                    </path>
+               </svg>
+          </div>
+          <div id="Group_45">
+               <div id="Litecoin">
+                    <span>Litecoin</span>
+               </div>
+               <img id="icons8_litecoin_100px" src="img/Litecoin.png" srcset="img/Litecoin.png 1x, img/Litecoin@2x.png 2x">
+                    
+          </div>
+          <div id="Group_46">
+               <div id="Ripple">
+                    <span>Ripple</span>
+               </div>
+               <img id="icons8_ripple_100px" src="img/Ripple.png" srcset="img/Ripple.png 1x, img/Ripple@2x.png 2x">
+                    
+          </div>
+          <div id="Group_47">
+               <div id="Dogecoin">
+                    <span>Dogecoin</span>
+               </div>
+               <img id="icons8_dogecoin_100px" src="img/Dogecoin.png" srcset="img/Dogecoin.png 1x, img/Dogecoin@2x.png 2x">
+                    
+          </div>
+          <div id="Group_48">
+               <div id="Crypto">
+                    <span>Crypto</span>
+               </div>
+               <img id="icons8_stellar_100px" src="img/Stellar.png" srcset="img/Stellar.png 1x, img/Stellar@2x.png 2x">
+                    
+          </div>
+     </div>
+     </div>
+
+     <!--Firebase Script-->
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+     <!-- SCRIPTS -->
+     <script src="js/login.js"></script>
+     <script src="js/firebase.js"></script>
+     <script src="js/navbarstate.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
 </body>
 </html>

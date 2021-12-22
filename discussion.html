@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Discussion | CryptoAlert</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">Crypto<span color = "#ce3232" >Alert</span></a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="index.html" class="smoothScroll">Home</a></li>
+                         <li><a href="alerts.html" class="smoothScroll">Alerts</a></li>
+                         <li><a href="market.html" class="smoothScroll">Market</a></li>
+                         <li><a href="discussion.html" class="smoothScroll">Discussion</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li>
+                         <a href="login.html" id="userlogin" value="userlogin" >LOGIN</a></li>
+                         <a href="getstarted.html" id="usergetstarted" class="section-btn">Get Started</a>
+                         <a href="#" id="user" class="message"> Hello, <Email-id></Email-id></a>
+                         <button id="userlogout" class="btn btn-danger" onclick="logout()">Logout</button>
+                    </ul>
+              </div>
+          </div>
+     </section>
+
+
+
+     <!-- HOME -->
+
+     <main class="container">
+          <section class="message-board">
+            <h2>Discussion</h2>
+            <div id="load-data">
+              <p>Loading...</p>
+            </div>
+          </section>
+          <section class="type-message box-shadow">
+               <div class= "discussiontext">
+               <h3>Add a comment | Reply</h3></div>
+            <form>
+              <div class="p-1 green-sheen">
+                <input class="nickname" type="text" placeholder="Nickname" id="nickname" required />
+              </div>
+              <div class="p-1 teal-blue">
+                <textarea class="dis_message" placeholder="Type message here..." id="message" required></textarea>
+              </div>
+              <div class="cambridge-blue inline-block position-right">
+                <button type="submit" class="dis_button" >SEND</button>
+              </div>
+            </form>
+            <div class="error-message">
+              <p>Error! Please fill in all the fields.</p>
+              <span class="close"> &times; </span>
+            </div>
+          </section>
+        </main>
+
+        
+          
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+     
+
+     
+     <script src = "js/discussion.js"></script>
+     <script src = "js/firebase.js"></script>
+     <!-- SCRIPTS -->
+     <script src="js/navbarstate.js"></script>
+     <script src="js/login.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
