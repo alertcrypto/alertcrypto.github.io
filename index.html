@@ -20,18 +20,19 @@
      <link rel="stylesheet" href="css/main.css">
 
      <!-- One Signal -->
+     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
      <script>
-          window.OneSignal = window.OneSignal || [];
-          OneSignal.push(function() {
-            OneSignal.init({
-              appId: "581e46dd-283b-4833-9ba6-7c6fae29906d",
-              safari_web_id: "web.onesignal.auto.3fd215f3-eebf-45ec-a840-b342bc8d8df9",
-              notifyButton: {
-                enable: true,
-              },
-            });
-          });
-        </script>
+     window.OneSignal = window.OneSignal || [];
+     OneSignal.push(function() {
+     OneSignal.init({
+          appId: "581e46dd-283b-4833-9ba6-7c6fae29906d",
+          safari_web_id: "web.onesignal.auto.3fd215f3-eebf-45ec-a840-b342bc8d8df9",
+          notifyButton: {
+          enable: true,
+          },
+     });
+     });
+</script>
 </head>
 <body>
 
