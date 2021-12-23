@@ -53,6 +53,7 @@ function CreateAlert()
             body: "ALERT: BTC price is now GREATER than your alert price.                  Current price: " +price + " INR"
         });
         document.getElementById("aprice").value = null;
+        location.reload();
         }
         else if(price < str)
         {
@@ -60,6 +61,7 @@ function CreateAlert()
             body: "ALERT: BTC price is now LESS than your alert price.                        Current price: " +price + " INR"
         });
         document.getElementById("bprice").value = null;
+        location.reload();
     }
     });
     },1000);
