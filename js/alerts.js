@@ -24,7 +24,6 @@ Notification.requestPermission(permission => {
     }
 });
 
-
 function CreateAlert()
 {
     setInterval( function() {
