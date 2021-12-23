@@ -913,12 +913,24 @@ iframe {
      Alerts           
   -----------------------------------------*/
   #Text{
-     margin-top: 150px;
-     text-align: center;
-     font-size: large;
-     color: white;
-     line-height: 15px;
-   }
+    margin-top: 160px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    line-height: 40px;
+  }
+
+  #CreateAlertButton{
+   box-sizing: border-box;
+   background: #ce3232;
+   color: white;
+   padding: 10px 25px;
+   font-size: large;
+   text-transform: uppercase;
+   text-align: center;
+   margin-left: 585px;
+   margin-top: 30px;
+  }
 
 
 
