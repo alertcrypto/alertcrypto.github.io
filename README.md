@@ -1,2 +1,2 @@
-# alertcrypto.github.io
-Crypto Alert Minor Project 
+Live at alertcrypto.github.io
+Crypto Alert (Minor Project) 
